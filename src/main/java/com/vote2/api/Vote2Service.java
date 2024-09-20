@@ -29,7 +29,6 @@ import com.vote2.api.models.MldCountMode;
 import com.vote2.api.models.MldSelectStatus;
 
 @RestController
-@CrossOrigin(origins = "*", maxAge = 3600)
 public class Vote2Service {
 
     @Value("${spring.database.url}")
