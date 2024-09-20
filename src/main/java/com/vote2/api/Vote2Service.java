@@ -3,6 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -28,6 +29,7 @@ import com.vote2.api.models.MldCountMode;
 import com.vote2.api.models.MldSelectStatus;
 
 @RestController
+@CrossOrigin(origins = "*", maxAge = 3600)
 public class Vote2Service {
 
     @Value("${spring.database.url}")
