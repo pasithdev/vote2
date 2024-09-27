@@ -264,6 +264,7 @@ public class FuncDatas {
         } catch (SQLException e1) {
             e1.printStackTrace();
         }
+        System.out.println("getData is runing...");
         return mdlGetDataVotes;
 
     }
